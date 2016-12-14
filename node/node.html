@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AlloyUI Node</title>
+	<script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
+	<link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
+	<script src="node.js"></script>
+</head>
+<body>
+	<div class="container">
+		<form id="jobForm">
+
+		<h2>Your Information: </h2>
+
+		<label class="control-label" for="firstname">First name: </label>
+		<input class="form-control" id="firstname" type="text" ><br>
+		<label class="control-label" for="lastname">Last name: </label>
+		<input class="form-control" id="lastname" type="text"><br>
+		<input name="gender" type="radio" value="Male"> Male<br>
+		<input name="gender" type="radio" value="Female"> Female<br>
+
+		<br>
+
+		<div class="job" id="job1">
+		<h4>Last job: </h4>
+			<label class="control-label" for="position1">Position: </label>
+			<input class="form-control" id="position1" type="text"><br>
+			<label class="control-label" for="employer1">Employer: </label>
+			<input class="form-control" id="employer1" type="text"><br>
+			<label class="control-label" for="dateRange">Dates of Employment: </label>
+			<input class="form-control" id="dateRange" type="text"><br>
+		</div>
+
+		<input class="btn btn-primary" id="submit" type="submit" value="Send" >
+		<input class="btn btn-primary" id="reset"  type="reset"  value="Reset" >
+		<input class="btn btn-primary" id="addJob" type="button" value="Add another job" >
+
+		</form>
+	</div>
+</body>
+</html>

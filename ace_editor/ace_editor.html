@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AlloyUI Ace Editor</title>
+	<script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
+	<link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
+	<script src="ace.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<!-- *****************   Javascript Editor ("myEditor")  ****************** -->
+	<div class="row">
+		<h2>Javascript Ace Editor</h2>
+		<div id="myEditor"></div>
+	</div>
+
+	<!-- *****************   Ace Editor with Option ("myEditor2")  ****************** -->
+	<div class="row">
+		<form class="form">
+			<h2>Ace Editor with Options</h2>
+			<label class="control-label" for="language" >Language Mode</label>
+			<select class="form-control" id="language" >
+				<option>javascript</option>
+				<option>json</option>
+				<option>xml</option>
+				<option>php</option>
+				<option>html</option>
+			</select>
+		</form>
+		<div id="myEditor2"></div>
+	</div>
+
+</div>
+
+</body>
+</html>
