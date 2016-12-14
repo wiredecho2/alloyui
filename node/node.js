@@ -1,3 +1,18 @@
+YUI().use(
+	'aui-node',
+	function(Y) {
+		var node = Y.one('#toggleColor');
+
+		node.on(
+			'click',
+			function() {
+				var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+				node.setStyle('color', '#' + randomColor);
+			}
+		);
+	}
+);
+
 // Create an AUI instance and load the 'aui-node' module
 YUI().use(
 	'aui-node',
